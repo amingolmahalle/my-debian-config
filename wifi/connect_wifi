@@ -1,0 +1,6 @@
+echo "auto wlp4s0
+iface wlp4s0 inet dhcp
+wpa-conf /etc/wifi.conf" | sudo tee /etc/network/interfaces
+
+wpa_passphrase $1 $2 | sudo tee /etc/wifi.conf
+sudo systemctl restart networking
