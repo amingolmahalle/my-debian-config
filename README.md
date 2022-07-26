@@ -5,7 +5,7 @@ First, install Debian without choosing Desktop Environment. (unselect Gnome, KDE
 
 After finishing Installation, first, log in to the system.
 
-Wow…already we can work just command line.
+Woow.already we can work just command line.
 
 Good. Everything will be ok.
 
@@ -52,11 +52,13 @@ Help link: [windows manager list](https://wiki.debian.org/DesktopEnvironment)
 
 After installation, we should reboot the system
 
-To customize i3 copy codes in the below link to ‘Vim .config/i3/config’.
+To customize i3 copy and psate config file in the below link to ‘~/.config/i3’.
 
 [customize i3 config](https://github.com/amingolmahalle/my-debian-config/blob/196ea4c4c9ed47c0d5657961033c5aaa232c23c7/.config/i3/config)
 
-Then we should install ‘lightdm’ to have light desktop management.
+Then we should install ‘lightdm’.
+
+(lightdm is a cross-desktop display manager.)
 
 > sudo apt install lightdm
 
@@ -80,12 +82,7 @@ To customize gtk3.0 run the below code step by step:
 
 > cd gtk-3.0/
 
- copy [settings.ini](https://github.com/amingolmahalle/my-debian-config/blob/97b474e71b49a95311a75ced973978e27631327f/.config/gtk-3.0/settings.ini) here.
-
-
-Copy and paste codes in the below link in settings.ini:
-
-[custom gtk config](https://github.com/amingolmahalle/my-debian-config/blob/196ea4c4c9ed47c0d5657961033c5aaa232c23c7/.config/gtk-3.0/settings.ini)
+ copy [settings.ini](https://github.com/amingolmahalle/my-debian-config/blob/97b474e71b49a95311a75ced973978e27631327f/.config/gtk-3.0/settings.ini) file and paste here.
 
 Now, I Suggest installing ‘Terminator’ as a default terminal system.
 
@@ -93,7 +90,7 @@ Because of writing with Python, this is the best, fastest, and most beautiful I 
 
 >  sudo apt install terminator
 
-To customize ‘Terminator’ copy codes in the below link to ‘Vim .config/terminator/config’.
+To customize ‘Terminator’ copy file in the below link and paste ‘~/.config/terminator’.
 
 [custom terminator config](https://github.com/amingolmahalle/my-debian-config/blob/196ea4c4c9ed47c0d5657961033c5aaa232c23c7/.config/terminator/config)
 
@@ -121,7 +118,7 @@ BCM4311-, BCM4312-, BCM4313-, BCM4321-, BCM4322-, BCM43142-, BCM43224-, BCM43225
 
 > vim /etc/apt/sources.list
 
-Add ‘contrib non-free’ at the end of every line after of main word and save the changes.
+Add ‘contrib non-free’ at the end of every line after of 'main' word and save the changes.
 
 (e.g. deb http://deb.debian.org/debian/ bullseye main contrib non-free)
 
@@ -143,10 +140,9 @@ Then copy the below file in ‘/usr/local/bin’:
 
 [connect to wifi script](https://github.com/amingolmahalle/my-debian-config/blob/97b474e71b49a95311a75ced973978e27631327f/wifi/connect_wifi)
 
-Copy the card name and replace every line that used the network card name with the new network card name.
+Copy the new network card name and replace every line that used the network card name with the new network card name.
 
 (e.g. replace wlo1 with wlp4s0)
-
 
 Then access execution to that:
 
@@ -165,4 +161,6 @@ To increase or decrease the mic volume.
 > amixer set Capture 5%+
 
 > amixer set Capture 5%-
+
+I hope You Enjoy Debian.
 
