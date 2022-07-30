@@ -1,13 +1,13 @@
 # my-debian-config
-How to Install Debian 11:
+How to Install **Debian** 11:
 
-First, install Debian without choosing Desktop Environment. (unselect Gnome, KDE, Xfce and etc. just select Utilities)
+First, install **Debian** without choosing desktop environment. (**unselect** Gnome, KDE, Xfce and etc. **just select** utilities)
 
-After finishing Installation, first, log in to the system.
+After finishing installation, first, log in to the system.
 
 Woow.already we can work just command line.
 
-Good. Everything will be ok.
+Good. everything will be ok.
 
 Run the below command with the root user to check update packages:
 > su
@@ -16,7 +16,7 @@ Run the below command with the root user to check update packages:
 
 > apt upgrade -y
 
- Then install sudo command:
+ Then install **sudo** command:
  
 > apt install sudo
 
@@ -38,13 +38,13 @@ You can change the password to an easy password.
 
 OK...!!!
 
-Now we are installing some practical applications on the system:
+Now we are installing **some practical applications** on the system:
 
-> sudo apt install wget curl htop vim tmux zip unzip rar unrar
+> sudo apt install wget curl htop vim tmux feh zip unzip rar unrar
 
-Now we should install i3 with the below command:
+Now we should install **i3** with the below command:
 
-(i3 a best of windows manager that I know)
+(**i3** a best of windows manager that I know)
 
 Help link: [windows manager list](https://wiki.debian.org/DesktopEnvironment)
 
@@ -52,11 +52,11 @@ Help link: [windows manager list](https://wiki.debian.org/DesktopEnvironment)
 
 After installation, we should reboot the system
 
-To customize i3 copy and psate config file in the below link to ‘~/.config/i3’.
+To customize **i3** copy and psate config file in the below link to **~/.config/i3**.
 
 [customize i3 config](https://github.com/amingolmahalle/my-debian-config/blob/196ea4c4c9ed47c0d5657961033c5aaa232c23c7/.config/i3/config)
 
-Then we should install ‘lightdm’.
+Then we should install **lightdm**.
 
 (lightdm is a cross-desktop display manager.)
 
@@ -66,15 +66,15 @@ After installation, reboot the system again
 
 I will hope everything is ok and we don’t have any errors.
 
-Now we need a file manager to see files, folders and etc, run the below command for installation:
+Now we need a **file manager** to see files, folders and etc, run the below command for installation:
 
 > sudo apt install nautilus
 
-To change the nautilus theme from light to dark mode:
+To change the **nautilus** theme from **light mode** to **dark mode**:
 
-> sudo apt-get install ‘libgtk-3-dev’
+> sudo apt-get install libgtk-3-dev
 
-To customize gtk3.0 run the below code step by step:
+To customize **gtk3.0** run the below code step by step:
 
 > cd ~/.config/
 
@@ -84,21 +84,21 @@ To customize gtk3.0 run the below code step by step:
 
  copy [settings.ini](https://github.com/amingolmahalle/my-debian-config/blob/97b474e71b49a95311a75ced973978e27631327f/.config/gtk-3.0/settings.ini) file and paste here.
 
-Now, I Suggest installing ‘Terminator’ as a default terminal system.
+Now, I suggest installing **Terminator** as a default terminal system.
 
-Because of writing with Python, this is the best, fastest, and most beautiful I know. easy to work.
+Because of writing with python, this is the best, fastest, and most beautiful i know. easy to work.
 
->  sudo apt install terminator
+> sudo apt install terminator
 
-To customize ‘Terminator’ copy file in the below link and paste ‘~/.config/terminator’.
+To customize **Terminator** copy file in the below link and paste **~/.config/terminator**.
 
 [custom terminator config](https://github.com/amingolmahalle/my-debian-config/blob/196ea4c4c9ed47c0d5657961033c5aaa232c23c7/.config/terminator/config)
 
-To add another keyboard language:(e.g. add the Persian language)
+To add another keyboard language:(e.g. add the **Persian** language)
 
 > sudo dpkg-reconfigure keyboard-configuration
 
-To install ‘Wireless Driver’ and connect to that do the below commands step by step:
+To install **Wireless Driver** and connect to that do the below commands step by step:
 
 > sudo -i
 
@@ -106,11 +106,11 @@ To install ‘Wireless Driver’ and connect to that do the below commands step 
 
 > ifconfig -a
 
-This command shows all network cards that exist in this system. check the network card should be IP address. if any network card here we should install that.
+This command shows all network cards that exist in this system. check the network card should be **IP address**. if any network card here we should install that.
 
 > lspci
 
-(e.g. for me: Network controller: Broadcom Inc. and subsidiaries BCM43142 802.11b/g/n)
+(**e.g.** for me: Network controller: Broadcom Inc. and subsidiaries BCM43142 802.11b/g/n)
 
 Supported Broadcom wireless network cards: 
 
@@ -118,9 +118,9 @@ BCM4311-, BCM4312-, BCM4313-, BCM4321-, BCM4322-, BCM43142-, BCM43224-, BCM43225
 
 > vim /etc/apt/sources.list
 
-Add ‘contrib non-free’ at the end of every line after of 'main' word and save the changes.
+Add **contrib non-free** at the end of every line after of **main** word and save the changes.
 
-(e.g. deb http://deb.debian.org/debian/ bullseye main contrib non-free)
+(**e.g.** deb http://deb.debian.org/debian/ bullseye main contrib non-free)
 
 > apt install firmware-brcm80211
 
@@ -136,13 +136,13 @@ Run again
 
 Now you see added new network card to the system.
 
-Then copy the below file in ‘/usr/local/bin’:
+Then copy the below file in **/usr/local/bin**:
 
 [connect to wifi script](https://github.com/amingolmahalle/my-debian-config/blob/97b474e71b49a95311a75ced973978e27631327f/wifi/connect_wifi)
 
 Copy the new network card name and replace every line that used the network card name with the new network card name.
 
-(e.g. replace wlo1 with wlp4s0)
+(**e.g.** replace wlo1 with wlp4s0)
 
 Then access execution to that:
 
@@ -150,17 +150,17 @@ Then access execution to that:
 
 > complete -W “connect_wifi” connect_wifi
 
-How to Control Audio:
+How to control **Audio**:
 
 > sudo apt-get install alsa-utils
 
 > sudo alsamixer
 
-To increase or decrease the mic volume.
+To increase or decrease the **mic** volume.
 
 > amixer set Capture 5%+
 
 > amixer set Capture 5%-
 
-I hope You Enjoy Debian.
+I hope you enjoy **Debian**.
 
