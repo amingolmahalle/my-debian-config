@@ -1,5 +1,5 @@
 # my-debian-config
-How to Install **Debian** 11:
+How to Install **Debian**:
 
 First, install **Debian** without choosing desktop environment. (**unselect** Gnome, KDE, Xfce and etc. **just select** utilities)
 
@@ -9,7 +9,7 @@ Woow.already we can work just command line.
 
 Good. everything will be ok.
 
-Run the below command with the root user to check update packages:
+Run the below commands with the root user to check update packages:
 > su
 
 > apt update
@@ -26,7 +26,7 @@ After installation we should add our own user to sudo group:
 
 > adduser myuser sudo
 
-Optional:
+**Optional**:
 
 You can change the password to an easy password.
 
@@ -52,7 +52,7 @@ Help link: [windows manager list](https://wiki.debian.org/DesktopEnvironment)
 
 After installation, we should reboot the system
 
-To customize **i3** copy and psate config file in the below link to **~/.config/i3**.
+To customize **i3** copy and paste config file in the below link to **~/.config/i3**.
 
 [customize i3 config](https://github.com/amingolmahalle/my-debian-config/blob/196ea4c4c9ed47c0d5657961033c5aaa232c23c7/.config/i3/config)
 
@@ -94,7 +94,9 @@ To customize **Terminator** copy file in the below link and paste **~/.config/te
 
 [custom terminator config](https://github.com/amingolmahalle/my-debian-config/blob/196ea4c4c9ed47c0d5657961033c5aaa232c23c7/.config/terminator/config)
 
-To add another keyboard language:(e.g. add the **Persian** language)
+To add another keyboard language:
+
+(**e.g.** add the **Persian** language)
 
 > sudo dpkg-reconfigure keyboard-configuration
 
@@ -106,7 +108,9 @@ To install **Wireless Driver** and connect to that do the below commands step by
 
 > ifconfig -a
 
-This command shows all network cards that exist in this system. check the network card should be **IP address**. if any network card here we should install that.
+This command shows all network cards that exist in this system.
+
+check the network card should be **IP address**. if any network card here we should install that.
 
 > lspci
 
