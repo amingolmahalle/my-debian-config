@@ -40,7 +40,7 @@ OK...!!!
 
 Now we are installing **some practical applications** on the system:
 
-> sudo apt install wget curl htop vim tmux feh zip unzip rar unrar
+> sudo apt install wget curl htop vim tmux feh bc zip unzip rar unrar
 
 Now we should install **i3** with the below command:
 
