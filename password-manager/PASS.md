@@ -69,29 +69,29 @@ You selected this USER-ID:
 Change (N)ame, (C)omment, (E)mail or (O)kay/(Q)uit? O
 One of the last steps of the GPG creation process is to set your password. Be sure to use a strong password containing uppercase, lowercase, and symbols. This will be your master password to unlock your pass datastore.
 
-3. Now that your GPG key is created you'll need to list your keys and take note of the secret (sec) key ID:
+3. Now that **your GPG key** is created you'll need to list your keys and take note of the secret (sec) key ID:
 
 > gpg2 --list-secret-keys --keyid-format LONG
 
 sec 4096R/**AAAA2222CCCC4444** 2022-03-18 [expires: 2024-03-18] uid Amin Golmahalle amingolmahalle@gmail.com>
 
-4. With your GPG key ID you can now initiate your pass datastore:
+4. With your **GPG key ID** you can now initiate your pass datastore:
 
-$ pass init 'AAAA2222CCCC4444'
+$ pass init **'AAAA2222CCCC4444'**
 
-mkdir: created directory ‘/home/myhome/.password-store’ Password store initialized for AAAA2222CCCC4444.
+mkdir: created directory ‘/home/myhome/.password-store’ Password store initialized for **AAAA2222CCCC4444**.
 
-To Insert new password:
+To insert new password:
 
-> pass insert Internet/github.com
+> pass insert **Internet/github.com**
 
 <enter your password>
 
-To Show specified password:
+To see a specific password:
 
-> pass show Internet/github.com
+> pass show **Internet/github.com**
 
-<enter GPG password at prompt>
+<enter **GPG password** at prompt>
 
 To show all passwords:
 
@@ -102,6 +102,6 @@ or
 > pass ls
 
 
-To sync with a Git repo:
+To sync with a **Git** repo:
 
 see [link](https://www.redhat.com/sysadmin/management-password-store)
