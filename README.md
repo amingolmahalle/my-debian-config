@@ -40,7 +40,8 @@ OK...!!!
 
 Now we are installing **some practical applications** on the system:
 
-> sudo apt install wget curl htop vim kate tmux feh mirage okular bc zip unzip rar unrar cowsay
+ >sudo apt update
+> sudo apt install -y wget curl htop vim kate tmux feh mirage okular bc zip unzip rar unrar cowsay libreoffice
 
 Now we should install **i3** with the below command:
 
