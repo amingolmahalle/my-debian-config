@@ -161,16 +161,24 @@ How to control **Audio**:
 
 > sudo alsamixer
 
-To increase or decrease the **mic** volume.
+To increase or decrease the **mic** volume:
 
 > amixer set Capture 5%+
 
 > amixer set Capture 5%-
 
-Set Up a Firewall:
+Set Up a **Firewall**:
 > sudo apt install ufw
 > sudo ufw enable
 > sudo ufw status verbose
+Now **ufw** is active in your system
+
+Extend the **battery life** of laptops:
+> sudo apt install tlp -y
+> sudo reboot
+> sudo systemctl status tlp
+Now **tlp** is active in your system
+(This tool provides automatic power settings that reduce energy usage)
 
 I hope you enjoy **Debian**.
 
