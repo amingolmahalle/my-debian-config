@@ -167,5 +167,10 @@ To increase or decrease the **mic** volume.
 
 > amixer set Capture 5%-
 
+Set Up a Firewall:
+> sudo apt install ufw
+> sudo ufw enable
+> sudo ufw status verbose
+
 I hope you enjoy **Debian**.
 
