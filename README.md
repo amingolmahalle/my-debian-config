@@ -1,11 +1,11 @@
-# my-debian-config
+# my-Debian-config
 How to Install **Debian**:
 
-First, install **Debian** without choosing desktop environment. (**unselect** Gnome, KDE, Xfce and etc. **just select** utilities)
+First, install **Debian** without choosing a desktop environment. (**unselect** Gnome, KDE, Xfce and etc. **just select** utilities)
 
-After finishing installation, first, log in to the system.
+After finishing the installation, first, log in to the system.
 
-Woow.already we can work just command line.
+Wow. already we can work just the command line.
 
 Good. everything will be ok.
 
@@ -20,7 +20,7 @@ Run the below commands with the root user to check update packages:
  
 > apt install sudo
 
-After installation we should add our own user to sudo group:
+After installation, we should add our user to the sudo group:
 
 > su -l
 
@@ -46,7 +46,7 @@ Now we are installing **some practical applications** on the system:
 
 Now we should install **i3** with the below command:
 
-(**i3** a best of windows manager that I know)
+(**i3** a best of Windows manager that I know)
 
 Help link: [windows manager list](https://wiki.debian.org/DesktopEnvironment)
 
@@ -54,7 +54,7 @@ Help link: [windows manager list](https://wiki.debian.org/DesktopEnvironment)
 
 After installation, we should reboot the system
 
-To customize **i3** copy and paste config file in the below link to **~/.config/i3**.
+To customize **i3** copy and paste the config file in the below link to **~/.config/i3**.
 
 [customize i3 config](https://github.com/amingolmahalle/my-debian-config/blob/196ea4c4c9ed47c0d5657961033c5aaa232c23c7/.config/i3/config)
 
@@ -66,9 +66,9 @@ Then we should install **lightdm**.
 
 After installation, reboot the system again
 
-I will hope everything is ok and we don’t have any errors.
+I hope everything is ok and we don’t have any errors.
 
-Now we need a **file manager** to see files, folders and etc, run the below command for installation:
+Now we need a **file manager** to see files, folders etc, run the below command for installation:
 
 > sudo apt install nautilus
 
@@ -88,11 +88,11 @@ To customize **gtk3.0** run the below code step by step:
 
 Now, I suggest installing **Terminator** as a default terminal system.
 
-Because of writing with python, this is the best, fastest, and most beautiful i know. easy to work.
+Because of writing with Python, this is the best, fastest, and most beautiful I know. easy to work.
 
 > sudo apt install terminator
 
-To customize **Terminator** copy file in the below link and paste **~/.config/terminator**.
+To customize **Terminator** copy the file in the below link and paste **~/.config/terminator**.
 
 [custom terminator config](https://github.com/amingolmahalle/my-debian-config/blob/196ea4c4c9ed47c0d5657961033c5aaa232c23c7/.config/terminator/config)
 
@@ -106,7 +106,7 @@ To install **Wireless Driver** and connect to that do the below commands step by
 
 > sudo -i
 
-> apt install net-tools (for use ifconfig command)
+> apt install net-tools (for use the ifconfig command)
 
 > ifconfig -a
 
@@ -140,13 +140,13 @@ Run again
 
 > ifconfig -a
 
-Now you see added new network card to the system.
+Now you see an added new network card to the system.
 
 Then copy the below file in **/usr/local/bin**:
 
 [connect to wifi script](https://github.com/amingolmahalle/my-debian-config/blob/97b474e71b49a95311a75ced973978e27631327f/wifi/connect_wifi)
 
-Copy the new network card name and replace every line that used the network card name with the new network card name.
+Copy the new network card name and replace every line that uses the network card name with the new network card name.
 
 (**e.g.** replace wlo1 with wlp4s0)
 
@@ -170,16 +170,27 @@ To increase or decrease the **mic** volume:
 
 Set Up a **Firewall**:
 > sudo apt install ufw
+
 > sudo ufw enable
+
 > sudo ufw status verbose
+
 Now **ufw** is active in your system
 
 Extend the **battery life** of laptops:
 > sudo apt install tlp -y
+
 > sudo reboot
+
 > sudo systemctl status tlp
+
 Now **tlp** is active in your system
 (This tool provides automatic power settings that reduce energy usage)
+
+Install gparted: A graphical tool for managing disks and partitions.
+> sudo apt update
+
+> sudo apt install gparted -y
 
 I hope you enjoy **Debian**.
 
